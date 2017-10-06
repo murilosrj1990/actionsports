@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>Contato</title>
+	<link rel="stylesheet" href="source/css/bootstrap.min.css"> 	
+	<script src="source/js/bootstrap.min.js"></script> 
+</head>
+
+<body>	
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				    <span class="sr-only">Toggle navigation</span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Action Sports</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="apresentacao.html">Apresentação</a></li>
+					<li><a href="historia.html">História</a></li>
+					<li><a href="contato.html">Contato</a></li>
+					<li><a href="produtos.html">Produtos</a></li>				
+					<li><a href="cadastro_clientes.html">Clientes</a></li>          
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+
+	<div id="conteiner" name="container" class="container">
+		<h1>Action Sport</h1>
+		<h3>Entre em contato conosco, deixando uma mensagem por email, faremos o melhor orçamento para você!!!</h3>
+
+			<form class="form-horizontal" method="_POST" >
+				<div  class="form-group">
+					<label for="nome">Nome</label>
+					<input type="text" class="form-control" id="nome" name="nome">
+				</div>
+				<div  class="form-group">
+					<label for="email">Email</label>
+					<input type="email" class="form-control" id="email" name="email">
+				</div>
+				<div  class="form-group">
+					<label for="nomeEmpresa">Nome</label>
+					<input type="text" class="form-control" id="nomeEmpresa" name="nomeEmpresa">
+				</div>
+				<div class="form-group">
+					<label for="mensagem">Mensagem</label>
+					<textarea id="txtarea" class="form-control" name="mensagem" placeholder="Escreva aqui sua mensagem..."></textarea>
+				</div>
+				<div class="form-group"> 				
+				<button class="btn btn-primary btn-lg"  type="submit">Enviar</button>
+				</div>
+			</form>			
+		
+	</div>	
+</body>
+
+</html>

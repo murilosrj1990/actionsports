@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Produtos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="source/css/bootstrap.min.css"> 	
+	<script src="source/js/bootstrap.min.js"></script> 
+</head>
+<body>
+	
+	
+	
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				    <span class="sr-only">Toggle navigation</span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Action Sports</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="apresentacao.html">Apresentação</a></li>
+					<li><a href="historia.html">História</a></li>
+					<li><a href="contato.html">Contato</a></li>
+					<li><a href="produtos.html">Produtos</a></li>				
+					<li><a href="cadastro_clientes.html">Clientes</a></li>          
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="container">
+
+		<h1 id="titulo" >Action Sport</h1>
+		<h3>Dê uma olhada em nossos produtos e peça seu orçamento.</h3>
+
+		<div>	
+
+			<table class="table table-striped">
+				<thead>
+					<th>ID</th>
+					<th>NOME</th>
+					<th>PREÇO</th>
+					<th>IMAGEM</th>					
+				</thead>
+				<tr>
+					<td>1</td>
+					<td>BOLA</td>
+					<td>R$ 100,00</td>
+					<td><img class="img-focus" src="imagens/bola.jpg" width="40px"></td>
+
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>CANELEIRA</td>
+					<td>R$ 30,00</td>
+					<td><img class="img-focus" src="imagens/caneleira.jpg" width="40px"></td>
+
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>CAMISA</td>
+					<td>R$ 40,00</td>
+					<td><img  class="img-focus" src="imagens/camisa.jpg" width="40px"></td>
+
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>BERMUDA</td>
+					<td>R$ 50,00</td>
+					<td><img class="img-focus" src="imagens/bermuda.jpg" width="40px"></td>
+
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>TROFEU</td>
+					<td>R$ 90,00</td>
+					<td><img  class="img-focus" src="imagens/trofeu.jpg" width="40px"></td>
+
+				</tr>
+			</table>
+		</div>			
+			
+		
+	</div>
+
+	<div hidden="true" class="moldura"  style="border: 4px solid #666;position: absolute ;top: 150px; left: 150px;">
+		<img class="zoom-img" src="imagens/trofeu.jpg" width="400px" height="400px">
+	</div>
+
+	
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+<!-- Animação do Zoom do Produto ao passar o mouse -->
+<script type="text/javascript">
+	$(document).ready(
+		function() {
+			$(".img-focus").mouseover(function(){
+
+				$(".zoom-img").attr("src", $(this).attr("src") );
+				$(".moldura").show("slow" );
+			});
+
+			$(".img-focus").mouseout(function(){
+				$(".moldura").hide("fast");
+
+			});				
+	});
+</script>
+
+
+</html>
